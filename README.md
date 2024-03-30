@@ -17,7 +17,7 @@ NPM Version: v7.x or higher
 
 ### Install
 ```
-npm install mc-status --save
+npm install @hardxploit/mc-status --save
 ```
 
 ### Start coding
