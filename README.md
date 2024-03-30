@@ -1,3 +1,5 @@
+[![npm v14.14.1](https://img.shields.io/badge/npm-v0.1.0-green.svg)](https://www.npmjs.com/package/@hardxploit/mc-status)
+
 # mc-status
 Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.
 
@@ -15,7 +17,7 @@ NPM Version: v7.x or higher
 
 ### Install
 ```
-npm install mc-status --save
+npm install @hardxploit/mc-status --save
 ```
 
 ### Start coding
