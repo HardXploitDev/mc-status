@@ -1,6 +1,6 @@
 {
   "name": "@hardxploit/mc-status",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.",
   "main": "dist/index.js",
   "scripts": {
