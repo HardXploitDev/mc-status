@@ -1,5 +1,5 @@
 {
-  "name": "mc-status",
+  "name": "@hardxploit/mc-status",
   "version": "0.1.0",
   "description": "Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.",
   "main": "dist/index.js",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/HardXploitDev/mc-status/issues"
   },
-  "homepage": "https://github.com/HardXploitDev/mc-status#readme"
+  "homepage": "https://github.com/HardXploitDev/mc-status#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }
