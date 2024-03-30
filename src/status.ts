@@ -1,5 +1,3 @@
-// API Base link, using v2 of the API because v1 is deprecated.
-
 // This will return the API url that will be requested.
 export class status {
     platform: 'bedrock' | 'java';

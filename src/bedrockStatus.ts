@@ -1,4 +1,4 @@
-// Importing the base status class and the API base url.
+// Importing the base status class.
 import { status } from "./status";
 
 // Get the status of Bedrock (platform) servers.

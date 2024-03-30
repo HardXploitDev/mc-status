@@ -1,3 +1,3 @@
-export * from './status';
-export * from './bedrockStatus';
-export * from './javaStatus';
+export { status } from './status';
+export { bedrockStatus } from './bedrockStatus';
+export { javaStatus } from './javaStatus';

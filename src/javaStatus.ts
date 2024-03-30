@@ -1,7 +1,7 @@
 // Importing 'apiUrl' to get the url.
 import { status } from "./status";
 
-// Get the status of Bedrock (platform) servers.
+// Get the status of Java (platform) servers.
 export class javaStatus extends status {
     constructor(ipAddress: string, port?: number) {
         super('java', ipAddress, port || 25565);
