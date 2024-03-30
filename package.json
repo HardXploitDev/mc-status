@@ -1,0 +1,26 @@
+{
+  "name": "mc-status",
+  "version": "0.1.0",
+  "description": "Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node dist/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HardXploitDev/mc-status.git"
+  },
+  "keywords": [
+    "minecraft",
+    "mcserver",
+    "status",
+    "serverstatus",
+    "minecraft-server"
+  ],
+  "author": "HardXploit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HardXploitDev/mc-status/issues"
+  },
+  "homepage": "https://github.com/HardXploitDev/mc-status#readme"
+}
