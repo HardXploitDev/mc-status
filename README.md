@@ -5,7 +5,6 @@ Unofficial project of MCStatus.io, a minimalist library that allows you to get i
 Can be used in JavaScript (CJS and ESM) and TypeScript.
 The current version is improved and made by [JustEvil](https://github.com/EvilG-MC), thank you very much for your contribution.
 
-> [!TIP]
 > The API used for check server status is from https://mcstatus.io/ (v2).
 
 ## Usage
@@ -14,7 +13,6 @@ The current version is improved and made by [JustEvil](https://github.com/EvilG-
 NodeJS Version: v16.15.x or higher
 NPM Version: v7.x or higher
 ```
-> [!IMPORTANT]
 > If you are using NodeJS versions older than v18, you will need to add the `--experimental-fetch` flag when running it, for the package to work correctly. [NodeJS Docs](https://nodejs.org/docs/latest-v18.x/api/globals.html#fetch).
 
 ### Install
@@ -34,9 +32,9 @@ import { ServerStatus, BedrockStatus, JavaStatus } from 'mc-status';
     const BedrockServer = new BedrockStatus('play.parrotsmp.com');
     const JavaServer = new JavaStatus('mc.hypixel.net');
 
-    const status = await myServer.get();
-    const bedrockStatus = await myBedrockServer.get();
-    const javaStatus = await myJavaServer.get();
+    const status = await Server.get();
+    const bedrockStatus = await BedrockServer.get();
+    const javaStatus = await JavaServer.get();
 
     console.log(status, bedrockStatus.port, javaStatus.online);
 })();
