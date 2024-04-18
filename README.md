@@ -2,6 +2,8 @@
 
 # mc-status
 Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.
+Can be used in JavaScript (CJS and ESM) and TypeScript.
+The current version is improved and made by [JustEvil](https://github.com/EvilG-MC), thank you very much for your contribution.
 
 > [!TIP]
 > The API used for check server status is from https://mcstatus.io/ (v2).
@@ -22,8 +24,6 @@ npm install @hardxploit/mc-status --save
 
 ### Start coding
 There are 3 different classes in the module, one general and the other two specific for the two possible platforms. And each one has a function (asynchronous) to obtain the statistics in JSON.
-Can be used in JavaScript (CJS and ESM) and TypeScript.
-The current version is improved and made by [JustEvil](https://github.com/EvilG-MC), thank you very much for your contribution.
 
 Example code:
 ```js
