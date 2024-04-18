@@ -1,4 +1,4 @@
-[![npm v0.1.4](https://img.shields.io/badge/npm-v0.1.4-green.svg)](https://www.npmjs.com/package/@hardxploit/mc-status)
+[![npm v0.2.0](https://img.shields.io/badge/npm-v0.2.0-green.svg)](https://www.npmjs.com/package/@hardxploit/mc-status)
 
 # mc-status
 Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.
@@ -22,33 +22,24 @@ npm install @hardxploit/mc-status --save
 
 ### Start coding
 There are 3 different classes in the module, one general and the other two specific for the two possible platforms. And each one has a function (asynchronous) to obtain the statistics in JSON.
+Can be used in JavaScript (CJS and ESM) and TypeScript.
+The current version is improved and made by [JustEvil](https://github.com/EvilG-MC), thank you very much for your contribution.
 
 Example code:
 ```js
-const { status, bedrockStatus, javaStatus } = require('mc-status');
+import { ServerStatus, BedrockStatus, JavaStatus } from 'mc-status';
 
-// 'status' needs 3 args: platform (java/bedrock), ipAddress and the port.
-const myServer = new status('java', 'localhost', 25565);
+(async () => {
+    const Server = new ServerStatus('java', 'mc.hypixel.net', 25565);
+    const BedrockServer = new BedrockStatus('play.parrotsmp.com');
+    const JavaServer = new JavaStatus('mc.hypixel.net');
 
-// 'bedrockStatus' and 'javaStatus', you can just give ipAddress or also the port.
-const myBedrockServer = new bedrockStatus('localhost', 19132);
-const myJavaServer = new javaStatus('localhost');
+    const status = await myServer.get();
+    const bedrockStatus = await myBedrockServer.get();
+    const javaStatus = await myJavaServer.get();
 
-// Getting stats (2 possible ways to do).
-
-// #1
-async function getStats() {
-    let myStats = await myServer.get();
-    let myBedrockStats = await myBedrockServer.get();
-    let myJavaStats = await myJavaServer.get();
-
-    console.log(myStats, myBedrockStats, myJavaStats);
-}
-
-// #2
-myServer.get().then(data => console.log(data));
-myBedrockServer.get().then(data => console.log(data));
-myJavaServer.get().then(data => console.log(data));
+    console.log(status, bedrockStatus.port, javaStatus.online);
+})();
 ```
 [Output (JSON)](https://mcstatus.io/docs)
 
