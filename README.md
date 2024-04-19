@@ -1,4 +1,4 @@
-[![npm v0.2.0](https://img.shields.io/badge/npm-v0.2.0-green.svg)](https://www.npmjs.com/package/@hardxploit/mc-status)
+[![npm v0.2.1](https://img.shields.io/badge/npm-v0.2.1-green.svg)](https://www.npmjs.com/package/@hardxploit/mc-status)
 
 # mc-status
 Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.
