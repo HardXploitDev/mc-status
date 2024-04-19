@@ -3,7 +3,6 @@
   "version": "0.2.0",
   "description": "Unofficial project of MCStatus.io, a minimalist library that allows you to get information about Minecraft Java or Bedrock servers.",
   "main": "dist/index.js",
-  "types": "dist/types.d.ts",
   "scripts": {
     "test": "node dist/test.js"
   },
